@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int marks_aquired(String *usn , String *name , int n ,int *internal)
+int marks_aquired(String *usn , String *name , int n ,int *internal, int *extra)
 {	
 	double total=0.0;		
 	for(int i=0;i<n;i++)
@@ -8,5 +8,18 @@ int marks_aquired(String *usn , String *name , int n ,int *internal)
 			total+=internal[i];
 		}
 	sort(internal,internal+n);
+	int x = (internal[1]+internal[2])/2;
+	
+	if(n<2)
+	{
+		int tota1=0;
+		int x = 2-n;
+		for(int i=0;i<x;i++)
+		total1+=extra[i];
+		for(int i=0;i<n;i++)
+		total1+=internal[i];
+		return total1/2:
+	}
+	else 
 	return (internal[1]+internal[2])/2;
 }
